@@ -13,7 +13,7 @@
         }
 
         .navbar {
-            background-color: rgba(35, 37, 33, 0.8); /* Semi-transparent background */
+            background-color: rgba(206, 52, 52, 0.8); /* Semi-transparent background */
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -134,7 +134,7 @@
         }
 
         .category-button {
-            background-color: #333;
+            background-color: rgb(245, 112, 112);
             color: white;
             text-align: center;
             padding: 10px 20px;
@@ -145,11 +145,11 @@
         }
 
         .category-button:hover {
-            background-color: #555;
+            background-color: rgb(224, 142, 75);
         }
 
         .call-button {
-            background-color: #28a745;
+            background-color:rgb(248, 21, 21);
             color: white;
             padding: 10px 15px;
             text-decoration: none;
@@ -160,7 +160,7 @@
         }
 
         .call-button:hover {
-            background-color: #218838;
+            background-color:rgb(214, 119, 41);
         }
 
         .section h1 {
@@ -316,11 +316,16 @@
         <div id="menu" class="section">
             <h1>Our Menu</h1>
             <div class="category-buttons">
-                <a href="{% url 'category_products' name='sweet' %}" class="category-button">Sweet</a>
-                <a href="{% url 'category_products' name='snacks' %}" class="category-button">Snacks</a>
-                <a href="{% url 'category_products' name='drinks' %}" class="category-button">Drinks</a>
-                <a href="{% url 'category_products' name='BREAKFAST' %}" class="category-button">BREAKFAST</a>
-                <a href="{% url 'category_products' name='CHINESE AND CONTINENTAL' %}" class="category-button">CHINESE AND CONTINENTAL</a>
+               <a href="{% url 'category_products' name='SWEETS' %}#menu" class="category-button">SWEETS</a>
+<a href="{% url 'category_products' name='CHAAT' %}#menu" class="category-button">CHAAT</a>
+<a href="{% url 'category_products' name='SOUP' %}#menu" class="category-button">SOUP</a>
+<a href="{% url 'category_products' name='SOUTH INDIAN' %}#menu" class="category-button">SOUTH INDIAN</a>
+<a href="{% url 'category_products' name='NORTH INDIAN' %}#menu" class="category-button">NORTH INDIAN</a>
+<a href="{% url 'category_products' name='PAPAD_SALAD_RAITA' %}#menu" class="category-button">PAPAD/SALAD/RAITA</a>
+<a href="{% url 'category_products' name='LASSI' %}#menu" class="category-button">LASSI</a>
+<a href="{% url 'category_products' name='BREAKFAST' %}#menu" class="category-button">BREAKFAST</a>
+<a href="{% url 'category_products' name='CHINESE AND CONTINENTAL' %}#menu" class="category-button">CHINESE AND CONTINENTAL</a>
+
             </div>
 
             <h1>{{ category.name }}</h1>
@@ -343,24 +348,61 @@
             </div>
         </div>
 
-        <div id="about" class="section">
-            <h1>About Us</h1>
-            <p style="margin: 20px;">We provide the freshest and most delicious meals right to your door. Our hotel is renowned for its high-quality service and exquisite food offerings.</p>
-        </div>
+      <div id="about" class="section" style="max-width: 1200px; margin: auto; padding: 50px 30px; font-family: 'Segoe UI', sans-serif; line-height: 1.9; background-color: #fff7f0; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+    <h1 style="text-align: center; color: #c0392b; font-size: 36px;">About Us</h1>
+    
+    <p><strong>Jay Bhagwan Sweets</strong> is more than just a sweet shop — it’s a celebration of India’s rich culinary traditions. Founded with a passion for authentic taste and quality, we have been serving our customers with pride, purity, and a promise of unmatched flavor. Every sweet we make is rooted in tradition, prepared with premium ingredients, and crafted with love.</p>
 
-        <div id="contact" class="section">
-            <h1>Contact Us</h1>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <p class="phone-number">📞 <a href="tel:+9779801033033">+977 9801033033</a></p>
-                    <p class="phone-number">📞 <a href="tel:+9779801033033">+977 9801033033</a></p>
-                    <p>We're always here to assist you. If you have any questions or need help, don’t hesitate to contact us. We look forward to serving you!</p>
-                </div>
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.0166950692887!2d85.34220387465479!3d27.685878876194835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19528d22a0fd%3A0x8d24787a2450c020!2sJay%20Bhagwan%20sweets!5e0!3m2!1sen!2sus!4v1726294501836!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
+    <p>From festive laddoos and melt-in-mouth barfis to crispy snacks and vibrant chaats, our menu offers a delightful journey through India’s most cherished flavors. Whether you’re stopping by for a quick bite or picking up sweets for a special occasion, you’ll find the warmth of home and the joy of festivity in every bite.</p>
+
+    <hr style="margin: 40px 0;">
+
+    <h2 style="color: #d35400;">🎉 Catering, Delivery & Events</h2>
+    <p>We proudly offer <strong>event catering</strong> for weddings, religious functions, birthdays, and corporate meetings. From full-course meals to customized sweet boxes, our team ensures that your guests experience not just food, but hospitality at its finest.</p>
+
+    <p>Need something delivered? We also provide reliable and timely <strong>food delivery services</strong>, bringing freshness right to your doorstep. Be it a family dinner or a last-minute party plan — we’ve got you covered.</p>
+
+    <hr style="margin: 40px 0;">
+
+    <h2 style="color: #d35400;">❤️ Why Choose Us?</h2>
+    <ul style="list-style-type: square; padding-left: 20px; color: #444;">
+        <li>Authentic sweets & snacks made fresh daily</li>
+        <li>Customized catering for all types of functions</li>
+        <li>Prompt home delivery and takeaway service</li>
+        <li>Experienced team dedicated to taste and quality</li>
+        <li>Decades of trust in every bite</li>
+    </ul>
+
+    <blockquote style="margin: 30px 0; font-style: italic; font-size: 18px; color: #7f8c8d; text-align: center;">
+        “At Jay Bhagwan Sweets, we don’t just serve food — we serve memories.”
+    </blockquote>
+</div>
+
+
+        <div id="contact" class="section" style="max-width: 1200px; margin: 50px auto; padding: 50px 30px; font-family: 'Segoe UI', sans-serif; background-color: #fff7f0; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+  <h1 style="text-align: center; color: #c0392b; font-size: 36px; margin-bottom: 40px;">Contact Us</h1>
+
+  <div class="contact-container" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
+    
+    <div class="contact-info" style="flex: 1 1 300px; max-width: 400px; color: #444; line-height: 1.7;">
+      <p class="phone-number" style="font-size: 20px; margin-bottom: 20px;">
+        📞 <a href="tel:+9779801033033" style="color: #d35400; font-weight: 600; text-decoration: none;">+977 9801033033</a>
+      </p>
+      <p class="phone-number" style="font-size: 20px; margin-bottom: 20px;">
+        📞 <a href="tel:+9779801033033" style="color: #d35400; font-weight: 600; text-decoration: none;">+977 9801033033</a>
+      </p>
+      <p style="font-size: 16px; max-width: 360px;">
+        We're always here to assist you. If you have any questions or need help, don’t hesitate to contact us. We look forward to serving you!
+      </p>
+    </div>
+
+    <div class="map-container" style="flex: 1 1 400px; max-width: 600px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.0166950692887!2d85.34220387465479!3d27.685878876194835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19528d22a0fd%3A0x8d24787a2450c020!2sJay%20Bhagwan%20sweets!5e0!3m2!1sen!2sus!4v1726294501836!5m2!1sen!2sus" width="100%" height="450" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+</div>
+
     </div>
 
     <div class="footer">
